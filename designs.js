@@ -1,8 +1,4 @@
 
-
-
-
-
 $(document).ready(function(){ // When size is submitted by the user, call makeGrid()
 
     $('#sizePicker').submit(function(e){
