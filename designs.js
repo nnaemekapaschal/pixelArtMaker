@@ -9,7 +9,7 @@ $(document).ready(function(){ // When size is submitted by the user, call makeGr
 
     $('#pixelCanvas').on("click","td", function(){ // Select color input
 
-        var color = $('#colorPicker').val();
+        const color = $('#colorPicker').val();
         
         if($(this)[0].bgColor == color){
             $(this)[0].bgColor = "";
@@ -19,19 +19,19 @@ $(document).ready(function(){ // When size is submitted by the user, call makeGr
     }); 
 });
 
-const function makeGrid() {
+function makeGrid() {
 
     // Your code goes here!
-    var height = $('#inputHeight').val(); //get canvas height
-    var width = $('#inputWeight').val(); //get canvas width
-    var table = $('#pixelCanvas'); //canvas table
+    const height = $('#inputHeight').val(); //get canvas height
+    const width = $('#inputWeight').val(); //get canvas width
+    const table = $('#pixelCanvas'); //canvas table
 
     $('#pixelCanvas').html(""); // initiliaze the canvas
 
-    for(var i = 0; i < height; i++){ //  create the table
+    for(let i = 0; i < height; i++){ //  create the table
 
-        var trBody = "<tr>"; 
-        for (var j = 0; j < width; j++){
+        let trBody = "<tr>"; 
+        for (let j = 0; j < width; j++){
             trBody += "<td></td>"; 
         }    
         trBody += "</tr>";
